@@ -20,7 +20,7 @@
    &kp GRAVE         &kp Q  &kp W  &kp F     &kp P    &kp B        &kp J     &kp L      &kp U      &kp Y    &kp SEMI  &kp BSLH
    &kp TAB           &kp A  &kp R  &mt LSHIFT S &kp T    &kp G        &kp M     &kp N      &mt RSHIFT E      &kp I    &kp O     &kp SQT
    &kp LEFT_BRACKET  &kp Z  &kp X  &kp C     &kp D    &kp V        &kp K     &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
-                                   &mt ESC LGUI  &mt RET LALT  &mt SPACE CTRL    &mt BSPC CTRL  &mt MINUS LALT  &mt EQUAL GUI
+                                   &mt LGUI ESC  &mt LALT RET  &mt LCTRL SPACE    &mt LCTRL BSPC  &mt LALT MINUS  &mt GUI EQUAL
                         >;
                 };
         };
