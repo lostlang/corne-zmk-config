@@ -19,7 +19,7 @@
         };
 
 	behaviors {
-		mo_kp : behavior_mo_kp {
+		mo_kp: behavior_mo_kp {
 			compatible = "zmk,behavior-hold-tap";
 			label = "mo_kp";
 			#binding-cells = <2>;
@@ -66,6 +66,5 @@
                            &trans  &trans  &trans     &trans  &trans  &trans
 			>;
 		};
-
         };
 };
