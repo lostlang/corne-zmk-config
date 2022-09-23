@@ -18,17 +18,6 @@
                 };
         };
 
-	behaviors {
-		mo_kp: behavior_mo_kp {
-			compatible = "zmk,behavior-hold-tap";
-			label = "mo_kp";
-			#binding-cells = <2>;
-			flavor = "hold-preferred";
-			tapping-term-ms = <200>;
-			bindings = <&mo>, <&kp>;
-		};
-	};
-	
         keymap {
                 compatible = "zmk,keymap";
                 default_layer {
@@ -43,7 +32,7 @@
 //                         '-------+-------+-------'       '-------+-------+-------'
                         bindings = <
    &kp GRAVE         &kp Q  &kp W  &kp F     &kp P    &kp B /**/ &kp J     &kp L      &kp U      &kp Y    &kp SEMI  &kp BSLH
-   &kp TAB           &mo_kp 2 A  &mo_kp 1 R  &mt LSHIFT S &kp T    &kp G /**/ &kp M     &kp N      &mt RSHIFT E      &kp I    &kp O     &kp SQT
+   &kp TAB           &lt 2 A  &lt 1 R  &mt LSHIFT S &kp T    &kp G /**/ &kp M     &kp N      &mt RSHIFT E      &kp I    &kp O     &kp SQT
    &kp LEFT_BRACKET  &kp Z  &kp X  &kp C     &kp D    &kp V /**/ &kp K     &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
                                    &mt LGUI ESC  &mt LALT RET /**/ &mt LCTRL SPACE    &mt LCTRL BSPC  &mt LALT MINUS  &mt LGUI EQUAL
                         >;
@@ -62,7 +51,7 @@
                         bindings = <
    &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp N1  &kp N4  &kp N7  &trans  &trans
    &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp N2  &kp N5  &kp N8  &kp N0  &trans
-   &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp N3  &kp N6  &kp N9  &trans  &tog 1
+   &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp N3  &kp N6  &kp N9  &trans  &to 1
                            &trans  &trans  &trans /**/ &trans  &trans  &trans
 			>;
 		};
@@ -80,7 +69,7 @@
                         bindings = <
    &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp F1  &kp F4  &kp F7  &kp F10  &trans
    &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp F2  &kp F5  &kp F6  &kp F11  &trans
-   &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp F3  &kp F6  &kp F8  &kp F12  &tog 2
+   &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp F3  &kp F6  &kp F8  &kp F12  &to 2
                            &trans  &trans  &trans /**/ &trans  &trans  &trans
 			>;
 		};
