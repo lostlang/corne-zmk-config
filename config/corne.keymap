@@ -17,6 +17,17 @@
                         bindings = <&caps_word>;
                 };
         };
+
+	behaviors {
+		mo_kp : behavior_mo_kp {
+			compatible = "zmk,behavior-hold-tap";
+			label = "mo_kp";
+			#binding-cells = <2>;
+			flavor = "hold-preferred";
+			tapping-term-ms = <200>;
+			bindings = <&mo>, <&kp>;
+		};
+	};
 	
         keymap {
                 compatible = "zmk,keymap";
@@ -24,7 +35,7 @@
 // .-----------------------------------------------.       .-----------------------------------------------.
 // |   `   |   Q   |   W   |   F   |   P   |   B   |       |   J   |   L   |   U   |   Y   |   ;   |   \   |
 // |-------+-------+-------+-------+-------+-------|       |-------+-------+-------+-------+-------+-------|
-// |  Tab  |   A   |   R   | S/LSHFT |   T   |   G   |       |   M   |   N   | E/RSHFT |   I   |   O   |   '   |
+// |  Tab  |   A   | R/NUM | S/LSHFT |   T   |   G   |       |   M   |   N   | E/RSHFT |   I   |   O   |   '   |
 // |-------+-------+-------+-------+-------+-------|       |-------+-------+-------+-------+-------+-------|
 // |   [   |   Z   |   X   |   C   |   D   |   V   |       |   K   |   H   |   ,   |   .   |   /   |   ]   |
 // '-----------------------+-------+-------+-------+       |-------+-------+-------+-----------------------'
@@ -32,10 +43,29 @@
 //                         '-------+-------+-------'       '-------+-------+-------'
                         bindings = <
    &kp GRAVE         &kp Q  &kp W  &kp F     &kp P    &kp B        &kp J     &kp L      &kp U      &kp Y    &kp SEMI  &kp BSLH
-   &kp TAB           &kp A  &kp R  &mt LSHIFT S &kp T    &kp G        &kp M     &kp N      &mt RSHIFT E      &kp I    &kp O     &kp SQT
+   &kp TAB           &kp A  &mo_kp 1 R  &mt LSHIFT S &kp T    &kp G        &kp M     &kp N      &mt RSHIFT E      &kp I    &kp O     &kp SQT
    &kp LEFT_BRACKET  &kp Z  &kp X  &kp C     &kp D    &kp V        &kp K     &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
                                    &mt LGUI ESC  &mt LALT RET  &mt LCTRL SPACE    &mt LCTRL BSPC  &mt LALT MINUS  &mt LGUI EQUAL
                         >;
                 };
+
+		num_layer {
+// .-----------------------------------------------.       .-----------------------------------------------.
+// |       |       |       |       |       |       |       |       |   1   |   4   |   7   |       |       |
+// |-------+-------+-------+-------+-------+-------|       |-------+-------+-------+-------+-------+-------|
+// |       |       |       |       |       |       |       |       |   2   |   5   |   8   |   0   |       |
+// |-------+-------+-------+-------+-------+-------|       |-------+-------+-------+-------+-------+-------|
+// |       |       |       |       |       |       |       |       |   3   |   6   |   9   |       |       |
+// '-----------------------+-------+-------+-------+       |-------+-------+-------+-----------------------'
+//                         |       |       |       |       |       |       |       |
+//                         '-------+-------+-------'       '-------+-------+-------'
+                        bindings = <
+   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &kp N1  &kp N4  &kp N7  &trans  &trans
+   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &kp N2  &kp N5  &kp N8  &N0     &trans
+   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &kp N3  &kp N6  &kp N9  &trans  &trans
+                           &trans  &trans  &trans     &trans  &trans  &trans
+			>;
+		};
+
         };
 };
