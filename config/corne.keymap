@@ -35,17 +35,17 @@
 // .-----------------------------------------------.       .-----------------------------------------------.
 // |   `   |   Q   |   W   |   F   |   P   |   B   |       |   J   |   L   |   U   |   Y   |   ;   |   \   |
 // |-------+-------+-------+-------+-------+-------|       |-------+-------+-------+-------+-------+-------|
-// |  Tab  |   A   | R/NUM | S/LSHFT |   T   |   G   |       |   M   |   N   | E/RSHFT |   I   |   O   |   '   |
+// |  Tab  |  A/FN | R/NUM | S/SHFT|   T   |   G   |       |   M   |   N   | E/SHFT|   I   |   O   |   '   |
 // |-------+-------+-------+-------+-------+-------|       |-------+-------+-------+-------+-------+-------|
 // |   [   |   Z   |   X   |   C   |   D   |   V   |       |   K   |   H   |   ,   |   .   |   /   |   ]   |
 // '-----------------------+-------+-------+-------|       |-------+-------+-------+-----------------------'
-//                         | ESC/GUI | ENT/ALT | SPC/CTRL |       | BSPC/CTRL | -/ALT | =/GUI |
+//                         |ESC/GUI|ENT/ALT|SPC/CTR|       |BSP/CTR| -/ALT | =/GUI |
 //                         '-------+-------+-------'       '-------+-------+-------'
                         bindings = <
-   &kp GRAVE         &kp Q  &kp W  &kp F     &kp P    &kp B        &kp J     &kp L      &kp U      &kp Y    &kp SEMI  &kp BSLH
-   &kp TAB           &kp A  &mo_kp 1 R  &mt LSHIFT S &kp T    &kp G        &kp M     &kp N      &mt RSHIFT E      &kp I    &kp O     &kp SQT
-   &kp LEFT_BRACKET  &kp Z  &kp X  &kp C     &kp D    &kp V        &kp K     &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
-                                   &mt LGUI ESC  &mt LALT RET  &mt LCTRL SPACE    &mt LCTRL BSPC  &mt LALT MINUS  &mt LGUI EQUAL
+   &kp GRAVE         &kp Q  &kp W  &kp F     &kp P    &kp B /**/ &kp J     &kp L      &kp U      &kp Y    &kp SEMI  &kp BSLH
+   &kp TAB           &mo_kp 2 A  &mo_kp 1 R  &mt LSHIFT S &kp T    &kp G /**/ &kp M     &kp N      &mt RSHIFT E      &kp I    &kp O     &kp SQT
+   &kp LEFT_BRACKET  &kp Z  &kp X  &kp C     &kp D    &kp V /**/ &kp K     &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
+                                   &mt LGUI ESC  &mt LALT RET /**/ &mt LCTRL SPACE    &mt LCTRL BSPC  &mt LALT MINUS  &mt LGUI EQUAL
                         >;
                 };
 
@@ -55,15 +55,33 @@
 // |-------+-------+-------+-------+-------+-------|       |-------+-------+-------+-------+-------+-------|
 // |       |       |       |       |       |       |       |       |   2   |   5   |   8   |   0   |       |
 // |-------+-------+-------+-------+-------+-------|       |-------+-------+-------+-------+-------+-------|
-// |       |       |       |       |       |       |       |       |   3   |   6   |   9   |       |       |
+// |       |       |       |       |       |       |       |       |   3   |   6   |   9   |       |  NUM  |
 // '-----------------------+-------+-------+-------|       |-------+-------+-------+-----------------------'
 //                         |       |       |       |       |       |       |       |
 //                         '-------+-------+-------'       '-------+-------+-------'
                         bindings = <
-   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &kp N1  &kp N4  &kp N7  &trans  &trans
-   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &kp N2  &kp N5  &kp N8  &kp N0  &trans
-   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &kp N3  &kp N6  &kp N9  &trans  &trans
-                           &trans  &trans  &trans     &trans  &trans  &trans
+   &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp N1  &kp N4  &kp N7  &trans  &trans
+   &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp N2  &kp N5  &kp N8  &kp N0  &trans
+   &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp N3  &kp N6  &kp N9  &trans  &to 1
+                           &trans  &trans  &trans /**/ &trans  &trans  &trans
+			>;
+		};
+
+		fn_layer {
+// .-----------------------------------------------.       .-----------------------------------------------.
+// |       |       |       |       |       |       |       |       |  F1   |  F4   |  F7   |  F10  |       |
+// |-------+-------+-------+-------+-------+-------|       |-------+-------+-------+-------+-------+-------|
+// |       |       |       |       |       |       |       |       |  F2   |  F5   |  F8   |  F11  |       |
+// |-------+-------+-------+-------+-------+-------|       |-------+-------+-------+-------+-------+-------|
+// |       |       |       |       |       |       |       |       |  F3   |  F6   |  F9   |  F12  |  FN   |
+// '-----------------------+-------+-------+-------|       |-------+-------+-------+-----------------------'
+//                       |        |        |       |       |       |       |       |
+//                         '-------+-------+-------'       '-------+-------+-------'
+                        bindings = <
+   &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp F1  &kp F4  &kp F7  &kp F10  &trans
+   &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp F2  &kp F5  &kp F6  &kp F11  &trans
+   &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp F3  &kp F6  &kp F8  &kp F12  &to 2
+                           &trans  &trans  &trans /**/ &trans  &trans  &trans
 			>;
 		};
         };
