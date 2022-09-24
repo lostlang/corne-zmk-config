@@ -10,6 +10,6 @@
 
 #define NumL1 &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp N1  &kp N4  &kp N7  &trans  &trans
 #define NumL2 &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp N2  &kp N5  &kp N8  &kp N0  &trans
-#define NumL3 &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp N3  &kp N6  &kp N9  &trans  &td_tog 1
+#define NumL3 &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp N3  &kp N6  &kp N9  &trans  &td_tog 1 1 1
 #define NumL4                         &trans  &trans  &trans /**/ &trans  &trans  &trans
 

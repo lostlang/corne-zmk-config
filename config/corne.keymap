@@ -16,7 +16,7 @@
 		td_tog: tap_dance_0 {
 			compatible = "zmk,behavior-tap-dance";
 			label = "TAP_DANCE_0";
-			#binding-cells = <1>;
+			#binding-cells = <3>;
 			tapping-term-ms = <200>;
 			bindings = <&tog &tog>, <&tog>;
 		};
