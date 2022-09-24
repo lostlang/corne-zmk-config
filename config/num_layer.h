@@ -1,4 +1,4 @@
-#define NumLayer &trans &trans
+#define NumLayer &trans &trans &trans  &trans  &trans  &trans /**/ &trans  &kp N1  &kp N4  &kp N7  &trans  &trans
 
 // .-----------------------------------------------.       .-----------------------------------------------.
 // |       |       |       |       |       |       |       |       |   1   |   4   |   7   |       |       |
