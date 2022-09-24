@@ -1,9 +1,9 @@
-#define NumLayer <
+#define NumLayer {<
    &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp N1  &kp N4  &kp N7  &trans  &trans
    &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp N2  &kp N5  &kp N8  &kp N0  &trans
    &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp N3  &kp N6  &kp N9  &trans  &to 1
                            &trans  &trans  &trans /**/ &trans  &trans  &trans
-			>;
+			>}
 
 // .-----------------------------------------------.       .-----------------------------------------------.
 // |       |       |       |       |       |       |       |       |   1   |   4   |   7   |       |       |
