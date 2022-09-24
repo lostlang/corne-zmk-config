@@ -8,43 +8,53 @@
 #include "colemak_layer.h"
 
 &caps_word {
-    continue-list = <UNDERSCORE BACKSPACE DELETE>;
+	continue-list = <UNDERSCORE BACKSPACE DELETE>;
 };
 
 / {
-        combos {
-                compatible = "zmk,combos";
+	macros {
+		zed_em_kay: zed_em_kay {
+			label = "ZM_zed_em_kay";
+			ompatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&macro_press &kp LSHFT>
+			, <&macro_tap &kp Z &kp M &kp K>
+			, <&macro_release &kp LSHFT>;
+		};
+	};
 
-                combo_caps {
-                        timeout-ms = <25>;
-                        key-positions = <15 20>;
-                        bindings = <&caps_word>;
-                };
-        };
+	combos {
+		compatible = "zmk,combos";
+		combo_caps {
+			timeout-ms = <25>;
+			key-positions = <15 20>;
+			bindings = <&caps_word>;
+		};
+	};
 
-        keymap {
-                compatible = "zmk,keymap";
-                default_layer {
+	keymap {
+		compatible = "zmk,keymap";
+		default_layer {
 
-                        bindings = <
+			bindings = <
 				ColemakL1
 				ColemakL2
 				ColemakL3
 				ColemakL4
-                        >;
-                };
+			>;
+		};
 
 		num_layer {
-                        bindings = <
-                                NumL1
-                                NumL2
-                                NumL3
-                                NumL4
+			bindings = <
+				NumL1
+				NumL2
+				NumL3
+				NumL4
 			>;
 		};
 
 		fn_layer {
-                        bindings = <
+			bindings = <
 				FnL1
 				FnL2
 				FnL3
