@@ -12,14 +12,13 @@
 };
 
 / {
-	macros {
-		zed_em_kay: zed_em_kay {
-			label = "ZM_zed_em_kay";
-			ompatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			bindings = <&macro_press &kp LSHFT>
-			, <&macro_tap &kp Z &kp M &kp K>
-			, <&macro_release &kp LSHFT>;
+	behaviors {
+		td_tog: tap_dance_0 {
+			compatible = "zmk,behavior-tap-dance";
+			label = "TAP_DANCE_0";
+			#binding-cells = <1>;
+			tapping-term-ms = <200>;
+			bindings = <&tog &tog>, <&tog>;
 		};
 	};
 
