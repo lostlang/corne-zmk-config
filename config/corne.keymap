@@ -3,9 +3,11 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#include "colemak_layer.h"
 #include "num_layer.h"
 #include "fn_layer.h"
-#include "colemak_layer.h"
+#include "arrow_layer.h"
+
 
 &caps_word {
 	continue-list = <UNDERSCORE BACKSPACE DELETE>;
@@ -34,7 +36,6 @@
 	keymap {
 		compatible = "zmk,keymap";
 		default_layer {
-
 			bindings = <
 				ColemakL1
 				ColemakL2
@@ -58,6 +59,15 @@
 				FnL2
 				FnL3
 				FnL4
+			>;
+		};
+
+		arrow_layer {
+			bindings = <
+				ArrowL1
+				ArrowL2
+				ArrowL3
+				ArrowL4
 			>;
 		};
         };
