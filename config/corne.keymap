@@ -6,7 +6,7 @@
 #include "colemak_layer.h"
 #include "num_layer.h"
 #include "fn_layer.h"
-#include "arrow_layer.h"
+#include "nav_layer.h"
 
 
 &caps_word {
@@ -62,13 +62,13 @@
 			>;
 		};
 
-		arrow_layer {
+		nav_layer {
 			bindings = <
-				ArrowL1
-				ArrowL2
-				ArrowL3
-				ArrowL4
+				NavL1
+				NavL2
+				NavL3
+				NavL4
 			>;
 		};
-        };
+	};
 };
