@@ -10,6 +10,6 @@
 
 #define FnL1 &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp F1  &kp F4  &kp F7  &kp F10  &trans
 #define FnL2 &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp F2  &kp F5  &kp F6  &kp F11  &trans
-#define FnL3 &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp F3  &kp F6  &kp F8  &kp F12  &td_tog
+#define FnL3 &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans  &kp F3  &kp F6  &kp F8  &kp F12  &trans
 #define FnL4                         &trans  &trans  &trans /**/ &trans  &trans  &trans
 

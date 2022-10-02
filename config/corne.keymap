@@ -47,12 +47,21 @@
 
 	keymap {
 		compatible = "zmk,keymap";
-		default_layer {
+		colemak_layer {
 			bindings = <
 				ColemakL1
 				ColemakL2
 				ColemakL3
 				ColemakL4
+			>;
+		};
+
+		qwerty_layer {
+			bindings = <
+				QwertyL1
+				QwertyL2
+				QwertyL3
+				QwertyL4
 			>;
 		};
 
@@ -92,13 +101,6 @@
 			>;
 		};
 
-		qwerty_layer {
-			bindings = <
-				QwertyL1
-				QwertyL2
-				QwertyL3
-				QwertyL4
-			>;
-		};
+		
 	};
 };
