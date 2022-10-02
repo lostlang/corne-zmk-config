@@ -7,6 +7,7 @@
 #include "num_layer.h"
 #include "fn_layer.h"
 #include "nav_layer.h"
+#include "settings_layer.h"
 
 
 &caps_word {
@@ -68,6 +69,15 @@
 				NavL2
 				NavL3
 				NavL4
+			>;
+		};
+
+		settings_layer {
+			bindings = <
+				SettingsL1
+				SettingsL2
+				SettingsL3
+				SettingsL4
 			>;
 		};
 	};
