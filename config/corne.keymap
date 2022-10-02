@@ -43,6 +43,12 @@
 			key-positions = <15 20>;
 			bindings = <&caps_word>;
 		};
+
+		combo_qwerty {
+			timeout-ms = <25>;
+			key-positions = <1 2 3>;
+			bindings = <&tog 1>;
+		};
 	};
 
 	keymap {
