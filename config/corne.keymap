@@ -4,6 +4,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 #include "colemak_layer.h"
+#include "qwerty_layer.h"
+
 #include "num_layer.h"
 #include "fn_layer.h"
 #include "nav_layer.h"
@@ -22,6 +24,15 @@
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
 			bindings = <&kp C>, <&kp Q>;
+		};
+
+		tt: behavior_kp_tog {
+			compatible = "zmk,behavior-hold-tap";
+			label = "tt";
+			#binding-cells = <2>;
+			tapping-term-ms = <200>;
+			flavor = "hold-preferred";
+			bindings = <&tog>, <&kp>;
 		};
 	};
 
@@ -78,6 +89,15 @@
 				SettingsL2
 				SettingsL3
 				SettingsL4
+			>;
+		};
+
+		qwerty_layer {
+			bindings = <
+				QwertyL1
+				QwertyL2
+				QwertyL3
+				QwertyL4
 			>;
 		};
 	};
