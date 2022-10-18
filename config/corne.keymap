@@ -125,5 +125,50 @@
 				CharL4
 			>;
 		};
+
+		freeze_num_layer {
+			bindings = <
+				NumL1
+				NumL2
+				NumL3
+				NumL4
+			>;
+		};
+
+		freeze_fn_layer {
+			bindings = <
+				FnL1
+				FnL2
+				FnL3
+				FnL4
+			>;
+		};
+
+		freeze_nav_layer {
+			bindings = <
+				NavL1
+				NavL2
+				NavL3
+				NavL4
+			>;
+		};
+
+		freeze_media_layer {
+			bindings = <
+				MediaL1
+				MediaL2
+				MediaL3
+				MediaL4
+			>;
+		};
+
+		freeze_char_layer {
+			bindings = <
+				CharL1
+				CharL2
+				CharL3
+				CharL4
+			>;
+		};
 	};
 };
