@@ -8,7 +8,7 @@
 //                         |       |       |       |       |       |       |       |
 //                         '-----------------------'       '-----------------------'
 
-#define CharL1 &trans  &kp EXCL  &kp DLLR   &trans    &trans    &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans
-#define CharL2 &trans  &kp AT    &kp PRCNT  &kp STAR  &kp HASH  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans
-#define CharL3 &trans  &kp LPAR  &kp RPAR   &trans    &trans    &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans
-#define CharL4                              &trans    &trans    &trans /**/ &trans  &trans  &trans
+#define CharL1 &trans  &kp LS(N1)  &kp LS(N4)  &kp LS(N7)  &trans      &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans
+#define CharL2 &trans  &kp LS(N2)  &kp LS(N5)  &kp LS(N8)  &kp LS(N3)  &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans
+#define CharL3 &trans  &kp LS(N9)  &kp LS(N0)  &kp LS(N6)  &trans      &trans /**/ &trans  &trans  &trans  &trans  &trans  &trans
+#define CharL4                                 &trans      &trans      &trans /**/ &trans  &trans  &trans
