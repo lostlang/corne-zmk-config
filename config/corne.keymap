@@ -10,6 +10,7 @@
 #include "fn_layer.h"
 #include "nav_layer.h"
 #include "settings_layer.h"
+#include "media_layer.h"
 
 
 &caps_word {
@@ -107,6 +108,13 @@
 			>;
 		};
 
-		
+		media_layer {
+			bindings = <
+				MediaL1
+				MediaL2
+				MediaL3
+				MediaL4
+			>;
+		};
 	};
 };
