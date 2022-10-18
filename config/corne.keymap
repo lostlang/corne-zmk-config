@@ -11,6 +11,7 @@
 #include "nav_layer.h"
 #include "settings_layer.h"
 #include "media_layer.h"
+#include "char_layer.h"
 
 
 &caps_word {
@@ -114,6 +115,15 @@
 				MediaL2
 				MediaL3
 				MediaL4
+			>;
+		};
+
+		char_layer {
+			bindings = <
+				CharL1
+				CharL2
+				CharL3
+				CharL4
 			>;
 		};
 	};
