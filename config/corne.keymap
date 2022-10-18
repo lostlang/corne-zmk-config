@@ -117,5 +117,14 @@
 				MediaL4
 			>;
 		};
+
+		char_layer {
+			bindings = <
+				CharL1
+				CharL2
+				CharL3
+				CharL4
+			>;
+		};
 	};
 };
