@@ -20,21 +20,20 @@
 
 / {
 	behaviors {
-		td_tog: tap_dance_0 {
+		left_bracket: tap_dance_0 {
 			compatible = "zmk,behavior-tap-dance";
-			label = "TAP_DANCE_0";
+			label = "left_bracket";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
-			bindings = <&kp C>, <&kp Q>;
+			bindings = <&kp LPAR>, <&kp LEFT_SQUARE_BRACKET>;
 		};
 
-		tt: behavior_kp_tog {
-			compatible = "zmk,behavior-hold-tap";
-			label = "tt";
-			#binding-cells = <2>;
+		right_bracket: tap_dance_1 {
+			compatible = "zmk,behavior-tap-dance";
+			label = "right_bracket";
+			#binding-cells = <0>;
 			tapping-term-ms = <200>;
-			flavor = "hold-preferred";
-			bindings = <&to>, <&kp>;
+			bindings = <&kp RPAR>, <&kp RIGHT_SQUARE_BRACKET>;
 		};
 	};
 
