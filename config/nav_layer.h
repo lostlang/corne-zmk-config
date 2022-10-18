@@ -6,7 +6,7 @@
 // |       |       |       |       |       |       |       |       |       |       |       |       |       |
 // '-----------------------+-------+-------+-------|       |-------+-------+-------+-----------------------'
 //                         |       |       |       |       |       |       |       |
-//                         '-------+-------+-------'       '-------+-------+-------'
+//                         '-----------------------'       '-----------------------'
 
 #define NavL1 &trans  &trans  &trans  &trans  &trans  &trans /**/ &kp PSCRN  &trans    &trans    &trans  &trans     &kp DEL
 #define NavL2 &trans  &trans  &trans  &trans  &trans  &trans /**/ &trans     &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans

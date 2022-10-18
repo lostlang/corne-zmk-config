@@ -6,7 +6,7 @@
 // | [/SHFT|  Z/FN | X/NUM |   C   | V/NAV |   B   |       |   N   |   M   |   ,   |   .   |   /   | ]/SHFT|
 // '-----------------------+-------+-------+-------|       |-------+-------+-------+-----------------------'
 //                         |ESC/GUI|ENT/ALT|SPC/CTR|       |BSP/CTR| -/ALT | =/GUI |
-//                         '-------+-------+-------'       '-------+-------+-------'
+//                         '-----------------------'       '-----------------------'
 
 #define QwertyL1 &kp GRAVE                &kp Q    &kp W    &kp E         &kp R         &kp T     /**/ &kp Y           &kp U           &kp I           &kp O    &kp P     &kp BSLH
 #define QwertyL2 &kp TAB                  &kp A    &kp S    &kp D         &kp F         &kp G     /**/ &kp H           &lt 5 J         &kp K           &kp L    &kp SEMI  &kp SQT

@@ -6,7 +6,7 @@
 // |   [   |   Z   |   X   |   C   |   D   |   V   |       |   K   |   H   |   ,   |   .   |   /   |   ]   |
 // '-----------------------+-------+-------+-------|       |-------+-------+-------+-----------------------'
 //                         |ESC/GUI|ENT/ALT|SPC/CTR|       |BSP/CTR| -/ALT | =/GUI |
-//                         '-------+-------+-------'       '-------+-------+-------'
+//                         '-----------------------'       '-----------------------'
 
 #define ColemakL1 &kp GRAVE         &kp Q    &kp W    &kp F         &kp P         &kp B           /**/ &kp J           &kp L           &kp U           &kp Y    &kp SEMI  &kp BSLH
 #define ColemakL2 &kp TAB           &lt 3 A  &lt 2 R  &mt LSHIFT S  &lt 4 T       &kp G           /**/ &kp M           &lt 5 N         &mt RSHIFT E    &kp I    &kp O     &kp SQT
