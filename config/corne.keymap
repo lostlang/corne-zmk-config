@@ -118,12 +118,12 @@
 			>;
 		};
 
-		q2c_layer {
+		char_layer {
 			bindings = <
-				QwertyL1
-				QwertyL2
-				QwertyL3
-				QwertyL4
+				CharL1
+				CharL2
+				CharL3
+				CharL4
 			>;
 		};
 	};
