@@ -25,7 +25,7 @@
 			label = "left_bracket";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
-			bindings = <&kp LPAR>, <&kp LEFT_SQUARE_BRACKET>;
+			bindings = <&kp LPAR>, <&kp LBKT>;
 		};
 
 		right_bracket: tap_dance_1 {
@@ -33,7 +33,7 @@
 			label = "right_bracket";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
-			bindings = <&kp RPAR>, <&kp RIGHT_SQUARE_BRACKET>;
+			bindings = <&kp RPAR>, <&kp RBKT>;
 		};
 	};
 
