@@ -7,7 +7,7 @@
 / {
 	keymap {
 		compatible = "zmk,keymap";
-		colemak_layer {
+		default_layer {
 			bindings = <
 				ColemakL1
 				ColemakL2
