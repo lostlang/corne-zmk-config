@@ -1,5 +1,5 @@
 config SHIELD_XIAOCORNE_LEFT
-	def_bool $(shields_list_contains,xiaocorne_left)
+	def_bool $(shields_list_contains,xiaoCorne_left)
 
 config SHIELD_XIAOCORNE_RIGHT
-	def_bool $(shields_list_contains,xiaocorne_right)
+	def_bool $(shields_list_contains,xiaoCorne_right)
