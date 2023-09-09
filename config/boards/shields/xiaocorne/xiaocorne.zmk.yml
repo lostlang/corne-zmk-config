@@ -2,7 +2,7 @@ file_format: "1"
 id: xiaocorne
 name: XiaoCorne
 type: shield
-url: https://github.com/mali1741/zmk-config-mcorne.git
+url: https://github.com/aroum/proXiao/
 requires: [seeeduino_xiao_ble]
 features:
   - keys
