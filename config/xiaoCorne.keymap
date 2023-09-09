@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #include "colemak_hd_layer.h"
+#include "bt_layer.h"
 
 / {
 	keymap {
@@ -20,6 +21,15 @@
 				ColemakL2
 				ColemakL3
 				ColemakL4
+			>;
+		};
+
+		bt_layer {
+			bindings = <
+				BtL1
+				BtL2
+				BtL3
+				BtL4
 			>;
 		};
 	};
