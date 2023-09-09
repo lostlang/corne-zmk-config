@@ -1,11 +1,11 @@
 file_format: "1"
-id: xiaocorne
-name: XiaoCorne
+id: xiaoCorne
+name: xiaoCorne
 type: shield
 url: https://github.com/aroum/proXiao/
 requires: [seeeduino_xiao_ble]
 features:
   - keys
 siblings:
-  - xiaocorne_left
-  - xiaocorne_right
+  - xiaoCorne_left
+  - xiaoCorne_right

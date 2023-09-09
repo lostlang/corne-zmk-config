@@ -1,4 +1,4 @@
-#include "xiaocorne.dtsi"
+#include "xiaoCorne.dtsi"
 
 &default_transform {
 	col-offset = <6>;
