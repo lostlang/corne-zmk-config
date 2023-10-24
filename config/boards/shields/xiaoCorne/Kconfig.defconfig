@@ -1,4 +1,4 @@
-if SHIELD_XIAOCORNE_RIGHT
+if SHIELD_XIAOCORNE_LEFT
 
 config ZMK_KEYBOARD_NAME
 	default "xiaoCorne"
