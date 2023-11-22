@@ -2,7 +2,7 @@ file_format: "1"
 id: xiaoCorne
 name: xiaoCorne
 type: shield
-url: https://github.com/aroum/proXiao/
+url: https://github.com/lostlang/corne-zmk-config
 requires: [seeeduino_xiao_ble]
 features:
   - keys

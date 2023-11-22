@@ -8,11 +8,11 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    keymap {
-        compatible = "zmk,keymap";
+	keymap {
+		compatible = "zmk,keymap";
 
-        default_layer {
-            bindings = <&sys_reset>;
-        };
-    };
+		default_layer {
+			bindings = <&sys_reset>;
+		};
+	};
 };
