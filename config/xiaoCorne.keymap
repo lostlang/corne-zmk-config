@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #include "colemak_hd_layer.h"
+#include "bluetooth_layer.h"
 
 / {
 	behaviors {
