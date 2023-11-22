@@ -5,6 +5,24 @@
 #include "colemak_hd_layer.h"
 
 / {
+	behaviors {
+		td_lbr: tap_dance_0 {
+			compatible = "zmk,behavior-tap-dance";
+			label = "left_bracket";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp LBKT>, <&kp LPAR>;
+		};
+
+		td_rbr: tap_dance_1 {
+			compatible = "zmk,behavior-tap-dance";
+			label = "right_bracket";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp RBKT>, <&kp RPAR>;
+		};
+	};
+
 	keymap {
 		compatible = "zmk,keymap";
 		colemak_hd_layer {
@@ -13,6 +31,15 @@
 				ColemakL2
 				ColemakL3
 				ColemakL4
+			>;
+		};
+
+		bluetooth_layer {
+			bindings = <
+				BluetoothL1
+				BluetoothL2
+				BluetoothL3
+				BluetoothL4
 			>;
 		};
 	};

@@ -4,7 +4,7 @@
 //|pwrOFF|NUMLK|     |     |     |     |   |     |     |     |     |     |      |
 //                   |     |     |     |   |     |     |     |
 
-#define BtL1 &bootloader        &none         &none         &none         &none        &none          &none         &none         &none         &none         &none         &bootloader
-#define BtL2 &bt BT_CLR         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4   &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-#define BtL3 &ext_power EP_OFF  &kp KP_NUM    &none         &none         &none        &none          &none         &none         &none         &none         &none         &ext_power EP_OFF
-#define BtL4                                                &trans        &none        &none          &none         &none         &trans
+#define BluetoothL1 &none       &none         &none         &none         &none         &none        /**/ &trans  &none  &none  &none  &none  &none
+#define BluetoothL2 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4 /**/ &none   &none  &none  &none  &none  &none
+#define BluetoothL3 &none       &none         &none         &none         &none         &none        /**/ &none   &none  &none  &none  &none  &none
+#define BluetoothL4                                         &none         &none         &none        /**/ &none   &none  &none
