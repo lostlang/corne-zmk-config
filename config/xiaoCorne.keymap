@@ -25,6 +25,7 @@
 
 		td_esc: tap_dance_2 {
 			compatible = "zmk,behavior-tap-dance";
+			label = "td_esc";
 			#binding-cells = <0>;
 			tapping-term-ms = <180>;
 			bindings = <&kp GRAVE>, <&kp ESC>;
