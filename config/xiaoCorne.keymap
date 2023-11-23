@@ -11,7 +11,7 @@
 			compatible = "zmk,behavior-tap-dance";
 			label = "left_bracket";
 			#binding-cells = <0>;
-			tapping-term-ms = <170>;
+			tapping-term-ms = <180>;
 			bindings = <&kp LBKT>, <&kp LPAR>;
 		};
 
@@ -19,8 +19,16 @@
 			compatible = "zmk,behavior-tap-dance";
 			label = "right_bracket";
 			#binding-cells = <0>;
-			tapping-term-ms = <170>;
+			tapping-term-ms = <180>;
 			bindings = <&kp RBKT>, <&kp RPAR>;
+		};
+
+		td_esc: tap_dance_2 {
+			compatible = "zmk,behavior-tap-dance";
+			label = "right_bracket";
+			#binding-cells = <0>;
+			tapping-term-ms = <180>;
+			bindings = <&kp GRAVE>, <&kp ESC>;
 		};
 	};
 
