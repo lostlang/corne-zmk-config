@@ -9,7 +9,7 @@
 	behaviors {
 		td_lbr: tap_dance_0 {
 			compatible = "zmk,behavior-tap-dance";
-			label = "left_bracket";
+			label = "td_lbr";
 			#binding-cells = <0>;
 			tapping-term-ms = <180>;
 			bindings = <&kp LBKT>, <&kp LPAR>;
@@ -17,7 +17,7 @@
 
 		td_rbr: tap_dance_1 {
 			compatible = "zmk,behavior-tap-dance";
-			label = "right_bracket";
+			label = "td_rbr";
 			#binding-cells = <0>;
 			tapping-term-ms = <180>;
 			bindings = <&kp RBKT>, <&kp RPAR>;
@@ -25,7 +25,6 @@
 
 		td_esc: tap_dance_2 {
 			compatible = "zmk,behavior-tap-dance";
-			label = "right_bracket";
 			#binding-cells = <0>;
 			tapping-term-ms = <180>;
 			bindings = <&kp GRAVE>, <&kp ESC>;
