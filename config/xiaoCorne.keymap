@@ -67,7 +67,7 @@
 		};
 
 		combo_RBRC {
-			tiemout-ms = <50>;
+			timeout-ms = <50>;
 			key-positions = <31 32>;
 			bindings = <&kp RBRC>;
 			layers = <0>;
