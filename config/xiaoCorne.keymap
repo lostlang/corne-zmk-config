@@ -2,9 +2,9 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#include "arrow_layer.h"
-#include "colemak_hd_layer.h"
 #include "bluetooth_layer.h"
+#include "colemak_hd_layer.h"
+#include "nav_layer.h"
 
 / {
 	behaviors {
@@ -53,12 +53,12 @@
 			>;
 		};
 
-		arrow_layer {
+		nav_layer {
 			bindings = <
-				ArrowL1
-				ArrowL2
-				ArrowL3
-				ArrowL4
+				NavL1
+				NavL2
+				NavL3
+				NavL4
 			>;
 		};
 	};
