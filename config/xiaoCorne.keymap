@@ -5,31 +5,72 @@
 #include "bluetooth_layer.h"
 #include "colemak_hd_layer.h"
 #include "nav_layer.h"
+#include "number_layer.h"
+
+&caps_word {
+	continue-list = <UNDERSCORE BACKSPACE DELETE>;
+};
 
 / {
 	behaviors {
-		td_lbr: tap_dance_0 {
-			compatible = "zmk,behavior-tap-dance";
-			label = "td_lbr";
-			#binding-cells = <0>;
-			tapping-term-ms = <200>;
-			bindings = <&kp LBKT>, <&kp LPAR>;
-		};
-
-		td_rbr: tap_dance_1 {
-			compatible = "zmk,behavior-tap-dance";
-			label = "td_rbr";
-			#binding-cells = <0>;
-			tapping-term-ms = <200>;
-			bindings = <&kp RBKT>, <&kp RPAR>;
-		};
-
-		td_esc: tap_dance_2 {
+		td_esc: tap_dance_0 {
 			compatible = "zmk,behavior-tap-dance";
 			label = "td_esc";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
 			bindings = <&kp GRAVE>, <&kp ESC>;
+		};
+	};
+
+	combos {
+		compatible = "zmk,combos";
+		combo_caps {
+			timeout-ms = <50>;
+			key-positions = <15 20>;
+			bindings = <&caps_word>;
+			layers = <0>;
+		};
+
+		combo_LPAR {
+			timeout-ms = <50>;
+			key-positions = <15 16>;
+			bindings = <&kp LPAR>;
+			layers = <0>;
+		};
+
+		combo_RPAR {
+			timeout-ms = <50>;
+			key-positions = <19 20>;
+			bindings = <&kp RPAR>;
+			layers = <0>;
+		};
+
+		combo_LBKT {
+			timeout-ms = <50>;
+			key-positions = <3 4>;
+			bindings = <&kp LBKT>;
+			layers = <0>;
+		};
+
+		combo_RBKT {
+			timeout-ms = <50>;
+			key-positions = <7 8>;
+			bindings = <&kp RBKT>;
+			layers = <0>;
+		};
+
+		combo_LBRC {
+			timeout-ms = <50>;
+			key-positions = <27 28>;
+			bindings = <&kp LBRC>;
+			layers = <0>;
+		};
+
+		combo_RBRC {
+			tiemout-ms = <50>;
+			key-positions = <31 32>;
+			bindings = <&kp RBRC>;
+			layers = <0>;
 		};
 	};
 
@@ -59,6 +100,15 @@
 				NavL2
 				NavL3
 				NavL4
+			>;
+		};
+
+		number_layer {
+			bindings = <
+				NumberL1
+				NumberL2
+				NumberL3
+				NumberL4
 			>;
 		};
 	};
