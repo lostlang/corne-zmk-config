@@ -12,16 +12,6 @@
 };
 
 / {
-	behaviors {
-		td_esc: tap_dance_0 {
-			compatible = "zmk,behavior-tap-dance";
-			label = "td_esc";
-			#binding-cells = <0>;
-			tapping-term-ms = <200>;
-			bindings = <&kp GRAVE>, <&kp ESC>;
-		};
-	};
-
 	combos {
 		compatible = "zmk,combos";
 		combo_caps {
@@ -31,6 +21,7 @@
 			layers = <0>;
 		};
 
+		// (
 		combo_LPAR {
 			timeout-ms = <50>;
 			key-positions = <15 16>;
@@ -38,6 +29,7 @@
 			layers = <0>;
 		};
 
+		// )
 		combo_RPAR {
 			timeout-ms = <50>;
 			key-positions = <19 20>;
@@ -45,6 +37,7 @@
 			layers = <0>;
 		};
 
+		// [
 		combo_LBKT {
 			timeout-ms = <50>;
 			key-positions = <3 4>;
@@ -52,6 +45,7 @@
 			layers = <0>;
 		};
 
+		// ]
 		combo_RBKT {
 			timeout-ms = <50>;
 			key-positions = <7 8>;
@@ -59,6 +53,7 @@
 			layers = <0>;
 		};
 
+		// {
 		combo_LBRC {
 			timeout-ms = <50>;
 			key-positions = <27 28>;
@@ -66,10 +61,35 @@
 			layers = <0>;
 		};
 
+		// }
 		combo_RBRC {
 			timeout-ms = <50>;
 			key-positions = <31 32>;
 			bindings = <&kp RBRC>;
+			layers = <0>;
+		};
+
+		// "
+		combo_DQT {
+			timeout-ms = <50>;
+			key-positions = <14 15>;
+			bindings = <&kp DQT>;
+			layers = <0>;
+		};
+
+		// '
+		combo_SQT {
+			timeout-ms = <50>;
+			key-positions = <2 3>;
+			bindings = <&kp SQT>;
+			layers = <0>;
+		};
+
+		// `
+		combo_GRAVE {
+			timeout-ms = <50>;
+			key-positions = <26 27>;
+			bindings = <&kp GRAVE>;
 			layers = <0>;
 		};
 	};
