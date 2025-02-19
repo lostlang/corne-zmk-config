@@ -131,5 +131,14 @@
 				NumberL4
 			>;
 		};
+
+		fn_layer {
+			bindings = <
+				FnL1
+				FnL2
+				FnL3
+				FnL4
+			>;
+		};
 	};
 };
