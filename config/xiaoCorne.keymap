@@ -4,6 +4,7 @@
 
 #include "bluetooth_layer.h"
 #include "colemak_hd_layer.h"
+#include "fn_layer.h"
 #include "nav_layer.h"
 #include "number_layer.h"
 
