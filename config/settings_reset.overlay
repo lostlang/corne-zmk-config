@@ -1,0 +1,3 @@
+&settings_reset_kscan {
+	rows = <1>;
+};

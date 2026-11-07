@@ -6,6 +6,13 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       revision: main
-      import: app/west.yml
+      import:
+        file: app/west.yml
+        name-allowlist:
+          - zephyr
+          - cmsis
+          - hal_nordic
+          - lvgl
+          - mbedtls
   self:
     path: config
