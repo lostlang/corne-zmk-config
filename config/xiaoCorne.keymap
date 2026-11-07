@@ -2,8 +2,9 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#include "modifiers.h"
 #include "bluetooth_layer.h"
-#include "colemak_hd_layer.h"
+#include "colemak_custom_layer.h"
 #include "fn_layer.h"
 #include "nav_layer.h"
 #include "number_layer.h"
@@ -99,46 +100,46 @@
 		compatible = "zmk,keymap";
 		colemak_hd_layer {
 			bindings = <
-				ColemakL1
-				ColemakL2
-				ColemakL3
-				ColemakL4
+				ColemakL1Left  ColemakL1Right
+				ColemakL2Left  ColemakL2Right
+				ColemakL3Left  ColemakL3Right
+				ColemakL4Left  ColemakL4Right
 			>;
 		};
 
 		bluetooth_layer {
 			bindings = <
-				BluetoothL1
-				BluetoothL2
-				BluetoothL3
-				BluetoothL4
+				BluetoothL1Left  BluetoothL1Right
+				BluetoothL2Left  BluetoothL2Right
+				BluetoothL3Left  BluetoothL3Right
+				BluetoothL4Left  BluetoothL4Right
 			>;
 		};
 
 		nav_layer {
 			bindings = <
-				NavL1
-				NavL2
-				NavL3
-				NavL4
+				NavL1Left  NavL1Right
+				NavL2Left  NavL2Right
+				NavL3Left  NavL3Right
+				NavL4Left  NavL4Right
 			>;
 		};
 
 		number_layer {
 			bindings = <
-				NumberL1
-				NumberL2
-				NumberL3
-				NumberL4
+				NumberL1Left  NumberL1Right
+				NumberL2Left  NumberL2Right
+				NumberL3Left  NumberL3Right
+				NumberL4Left  NumberL4Right
 			>;
 		};
 
 		fn_layer {
 			bindings = <
-				FnL1
-				FnL2
-				FnL3
-				FnL4
+				FnL1Left  FnL1Right
+				FnL2Left  FnL2Right
+				FnL3Left  FnL3Right
+				FnL4Left  FnL4Right
 			>;
 		};
 	};
